@@ -2592,6 +2592,8 @@ The following table describes the parameter object for `deleteKey`,
 
 ##### Multitasking Household Robot K20+ Pro
 
+| deviceType | commandType | Command  | command parameter | Description                                                  |
+| ---------- | ----------- | -------- | ----------------- | ------------------------------------------------------------ |
 | Multitasking Household Robot K20+ Pro | command     | startClean  | {"action": action_str, "param": {"fanLevel": fan_level_int, "times": clean_cycle_int}} | start cleaning. <br />`action_str`, the cleaning mode, *sweep* or *mop*.<br />`fanLevel`, the vacuum level, `1-4`.<br />`times`, the number of cycles, `1-2639999`, in theory. |
 | Multitasking Household Robot K20+ Prod | command     | pause       | default                                                      | pause cleaning                                               |
 | Multitasking Household Robot K20+ Pro | command     | dock        | default                                                      | return to charging dock                                      |
@@ -5009,6 +5011,7 @@ When an event gets triggered, SwitchBot server will send a `POST` request to the
 | battery | Integer | attributes of the context object. the battery level, range from 0 to 100 |
 | taskType | String | attributes of the context object. the current task in progress. *standBy*, *explore*, *cleanAll*, *cleanArea*, *cleanRoom*, *backToCharge*, *collectDust*, *remoteControl*, *cleanWithExplorer* |
 | timeOfSample    | Long | attributes of the context object. the time stamp when the event is sent |
+
 
 ```js
 {
