@@ -757,8 +757,6 @@ The following table lists the most common HTTP error response,
 
 
 
-
-
 ## Devices
 
 The devices API is used to access the properties and states of SwitchBot devices and to send control commands to those devices.
