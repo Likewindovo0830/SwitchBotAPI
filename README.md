@@ -56,7 +56,7 @@
       - [K10+ Pro Combo](#k10+-pro-combo)
       - [Floor Cleaning Robot S10](#floor-cleaning-robot-s10)
       - [Floor Cleaning Robot S20](#floor-cleaning-robot-s20)
-      - [Multitasking Household Robot K20+ Pro](#multitatasking-household-robot-k20+-pro)
+      - [Multitasking Household Robot K20+ Pro](#multitasking-household-robot-k20-pro)
       - [Humidifier](#humidifier)
       - [Evaporative Humidifier](#evaporative-humidifier)
       - [Evaporative Humidifier (Auto-refill)](#evaporative-humidifier-auto-refill)
@@ -114,7 +114,7 @@
       - [Mini Robot Vacuum K10+](#mini-robot-vacuum-k10+-1)
       - [Mini Robot Vacuum K10+ Pro](#mini-robot-vacuum-k10+-pro-1)
       - [K10+ Pro Combo](#k10+-pro-combo-1)
-      - [Multitasking Household Robot K20+ Pro](#multitatasking-household-robot-k20+-pro-1)
+      - [Multitasking Household Robot K20+ Pro](#multitasking-household-robot-k20-pro-1)
       - [Floor Cleaning Robot S10](#floor-cleaning-robot-s10-1)
       - [Floor Cleaning Robot S20](#floor-cleaning-robot-s20-1)
       - [Humidifier](#humidifier-1)
@@ -169,7 +169,7 @@
       - [Mini Robot Vacuum K10+](#mini-robot-vacuum-k10+-2)
       - [Mini Robot Vacuum K10+ Pro](#mini-robot-vacuum-k10+-pro-2)
       - [K10+ Pro Combo](#k10+-pro-combo-2)
-      - [Multitasking Household Robot K20+ Pro](#multitatasking-household-robot-k20+-pro-2)
+      - [Multitasking Household Robot K20+ Pro](#multitasking-household-robot-k20-pro-2)
       - [Floor Cleaning Robot S10](#floor-cleaning-robot-s10-2)
       - [Floor Cleaning Robot S20](#floor-cleaning-robot-s20-2)
       - [Ceiling Light](#ceiling-light-2)
@@ -262,7 +262,7 @@
     + [Mini Robot Vacuum K10+](#mini-robot-vacuum-k10+-3)
     + [Mini Robot Vacuum K10+ Pro](#mini-robot-vacuum-k10+-pro-3)
     + [K10+ Pro Combo](#k10+-pro-combo-3)
-    + [Multitasking Household Robot K20+ Pro](#multitatasking-household-robot-k20+-pro-3)
+    + [Multitasking Household Robot K20+ Pro](#multitasking-household-robot-k20-pro-3)
     + [Floor Cleaning Robot S10](#floor-cleaning-robot-s10-3)
     + [Floor Cleaning Robot S20](#floor-cleaning-robot-s20-3)
     + [Ceiling Light](#ceiling-light-3)
@@ -1225,7 +1225,7 @@ The `deviceList` array contains a list of objects with the following key-value a
 | enableCloudService | Boolean    | determines if Cloud Service is enabled or not for the current device |
 | hubDeviceId        | String     | device's parent Hub ID. *000000000000* when the device itself is a Hub or it is connected through Wi-Fi. |
 
-##### Multitatasking Household Robot K20+ Pro
+##### Floor Cleaning Robot S20
 
 | Key                | Value Type | Description                                                  |
 | ------------------ | ---------- | ------------------------------------------------------------ |
