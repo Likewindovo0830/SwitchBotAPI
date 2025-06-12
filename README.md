@@ -1699,7 +1699,7 @@ The `body` object contains the following properties,
 | deviceId           | String     | device ID                                                    |
 | deviceType         | String     | device type. *Bot*                                           |
 | power              | String     | ON/OFF state                                                 |
-| battery              | Integer | Four-segment battery level division,`<10%, shown as 9;10%~20%, shown as 19;20%~60%, shown as 59;≥60%, shown as 100`|
+| battery              | Integer | Four-segment battery level division,`<10%, shown as 9;10%~20%, shown as 19;20%~60%,shown as 59;≥60%, shown as 100`|
 | version              | String     | the current firmware version, e.g. V6.3 |
 | deviceMode              | String     | *pressMode*, *switchMode*, or *customizeMode*                                                 |
 | hubDeviceId        | String     | device's parent Hub ID                                       |
