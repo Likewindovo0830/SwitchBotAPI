@@ -59,7 +59,7 @@
       - [K10+ Pro Combo](#k10+-pro-combo)
       - [Floor Cleaning Robot S10](#floor-cleaning-robot-s10)
       - [Floor Cleaning Robot S20](#floor-cleaning-robot-s20)
-      - [Floor Cleaning Robot K11+](#floor-cleaning-robot-k11+)
+      - [Robot Vacuum K11+](#robot-vacuum-k11+)
       - [Multitasking Household Robot K20+ Pro](#multitasking-household-robot-k20-pro)
       - [Humidifier](#humidifier)
       - [Evaporative Humidifier](#evaporative-humidifier)
@@ -122,7 +122,7 @@
       - [Multitasking Household Robot K20+ Pro](#multitasking-household-robot-k20-pro-1)
       - [Floor Cleaning Robot S10](#floor-cleaning-robot-s10-1)
       - [Floor Cleaning Robot S20](#floor-cleaning-robot-s20-1)
-      - [Floor Cleaning Robot K11+](#floor-cleaning-robot-k11+-1)
+      - [Robot Vacuum K11+](#robot-vacuum-k11+-1)
       - [Humidifier](#humidifier-1)
       - [Evaporative Humidifier](#evaporative-humidifier-1)
       - [Evaporative Humidifier (Auto-refill)](#evaporative-humidifier-auto-refill-1)
@@ -179,7 +179,7 @@
       - [Multitasking Household Robot K20+ Pro](#multitasking-household-robot-k20-pro-2)
       - [Floor Cleaning Robot S10](#floor-cleaning-robot-s10-2)
       - [Floor Cleaning Robot S20](#floor-cleaning-robot-s20-2)
-      - [Floor Cleaning Robot K11+](#floor-cleaning-robot-k11+-2)
+      - [Robot Vacuum K11+](#robot-vacuum-k11+-2)
       - [Ceiling Light](#ceiling-light-2)
       - [Ceiling Light Pro](#ceiling-light-pro-2)
       - [Keypad](#keypad-2)
@@ -274,7 +274,7 @@
     + [Multitasking Household Robot K20+ Pro](#multitasking-household-robot-k20-pro-3)
     + [Floor Cleaning Robot S10](#floor-cleaning-robot-s10-3)
     + [Floor Cleaning Robot S20](#floor-cleaning-robot-s20-3)
-    + [Floor Cleaning Robot K11+](#floor-cleaning-robot-k11+-3)
+    + [Robot Vacuum K11+](#robot-vacuum-k11+-3)
     + [Ceiling Light](#ceiling-light-3)
     + [Ceiling Light Pro](#ceiling-light-pro-3)
     + [Keypad](#keypad-3)
@@ -758,7 +758,7 @@ The following table provides definitions to the terms to be frequently mentioned
 | S20   | Short for SwitchBot Floor Cleaning Robot S10                 | W6602310            |                                   |
 | K10+ Pro Combo | Short for SwitchBot Robot Vacuum K10+ Pro Combo | W3002500 | |
 | K20+ Pro | Short for SwitchBot Multitasking Household Robot K20+ Pro | W3002520 | |
-| K11+ | Short for SwitchBot Floor Cleaning Robot k11+ | W3003100 and W3003100 | |
+| K11+ | Short for Robot Vacuum K11+| W3003100 and W3003100 | |
 | Ceiling Light                | Short for SwitchBot Ceiling Light                            | W2612230 and W2612240 | Currently only available in Japan |
 | Ceiling Light Pro            | Short for SwitchBot Ceiling Light Pro                        | W2612210 and W2612220 | Currently only available in Japan |
 | Indoor Cam                   | Short for SwitchBot Indoor Cam                               | W1301200              |                                   |
@@ -1331,7 +1331,7 @@ The `deviceList` array contains a list of objects with the following key-value a
 | enableCloudService | Boolean    | determines if Cloud Service is enabled or not for the current device |
 | hubDeviceId        | String     | device's parent Hub ID. *000000000000* when the device itself is a Hub or it is connected through Wi-Fi. |
 
-##### Floor Cleaning Robot K11+
+##### Robot Vacuum K11+
 
 | Key                | Value Type | Description                                                  |
 | ------------------ | ---------- | ------------------------------------------------------------ |
@@ -2082,7 +2082,7 @@ The `body` object contains the following properties,
 | waterBaseBattery | Integer | the current battery level `0-100` |
 | taskType | String | the current task in progress. *standBy*, *explore*, *cleanAll*, *cleanArea*, *cleanRoom*, *fillWater*, *deepWashing*, *backToCharge*, *markingWaterBase*, *drying*, *collectDust*, *remoteControl*, *cleanWithExplorer*, *fillWaterForHumi*, *markingHumi* |
 
-##### Floor Cleaning Robot K11+
+##### Robot Vacuum K11+
 
 | Key                | Value Type | Description                                                  |
 | ------------------ | ---------- | ------------------------------------------------------------ |
@@ -2793,7 +2793,7 @@ The following table describes the parameter object for `deleteKey`,
 | S20        | command     | selfClean       | `1` or `2` or `3`                                            | mode `1`, wash the mop.<br />mode `2`, dry itself.<br /> mode `3`, terminate. |
 | S20        | command     | changeParam     | {"fanLevel": fan_level_int, "waterLevel": water_level_int, "times": clean_cycle_int} | `fanLevel`, the vacuum level, `1-4`.<br />`waterLevel`, the mop moisture level, `1-2`.<br />`times`, the number of cycles, `1-2639999`, in theory. |
 
-##### Floor Cleaning Robot K11+
+##### Robot Vacuum K11+
 
 | deviceType | commandType | Command         | command parameter                                            | Description                                                  |
 | ---------- | ----------- | --------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -4391,7 +4391,7 @@ When an event gets triggered, SwitchBot server will send a `POST` request to the
 }
 ```
 
-#### Floor Cleaning Robot K11+
+#### Robot Vacuum K11+
 | Key Name     | Value Type | Description                                          |
 | ------------ | ---------- | ---------------------------------------------------- |
 | eventType    | String     | the type of events                                   |
