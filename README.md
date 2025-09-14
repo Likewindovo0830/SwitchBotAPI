@@ -49,7 +49,6 @@
       - [RGBICWW Strip Light](#rgbicww-strip-light)
       - [RGBICWW Floor Lamp](#rgbicww-floor-light)
       - [RGBIC Neon Wire Rope Light](#rgbic-neon-wire-rope-light)
-      - [Candle Warmer Lamp](#candle-warmer-lamp)
       - [Smart Radiato Thermostat](#smart-radiato-thermostat)
       - [Plug Mini (US)](#plug-mini-us)
       - [Plug Mini (JP)](#plug-mini-jp)
@@ -116,7 +115,6 @@
       - [RGBICWW Strip Light](#rgbicww-strip-light-1)
       - [RGBICWW Floor Lamp](#rgbicww-floor-light-1)
       - [RGBIC Neon Wire Rope Light](#rgbic-neon-wire-rope-light-1)
-      - [Candle Warmer Lamp](#candle-warmer-lamp-1)
       - [Smart Radiato Thermostat](#smart-radiato-thermostat-1)
       - [Plug Mini (US)](#plug-mini-us-1)
       - [Plug Mini (JP)](#plug-mini-jp-1)
@@ -195,7 +193,6 @@
       - [RGBICWW Strip Light](#rgbicww-strip-light-2)
       - [RGBICWW Floor Lamp](#rgbicww-floor-light-2)
       - [RGBIC Neon Wire Rope Light](#rgbic-neon-wire-rope-light-2)
-      - [Candle Warmer Lamp](#candle-warmer-lamp-2)
       - [Smart Radiato Thermostat](#smart-radiato-thermostat--2)
       - [Keypad](#keypad-2)
       - [Keypad Touch](#keypad-touch-2)
@@ -295,7 +292,6 @@
     + [RGBICWW Strip Light](#rgbicww-strip-light-3)
     + [RGBICWW Floor Lamp](#rgbicww-floor-light-3)
     + [RGBIC Neon Wire Rope Light](#rgbic-neon-wire-rope-light-3)
-    + [Candle Warmer Lamp](#candle-warmer-lamp-3)
     + [Smart Radiato Thermostat ](#smart-radiato-thermostat-3)
     + [Keypad](#keypad-3)
       - [Create a passcode](#create-a-passcode)
@@ -813,7 +809,6 @@ The following table provides definitions to the terms to be frequently mentioned
 | RGBICWW Strip Light          | Short for SwitchBot RGBICWW Strip Light                      | W1702109              |                                   |
 | RGBICWW Floor Lamp           | Short for SwitchBot RGBICWW Floor Lamp                       | W1702101              |                                   |
 | RGBIC Neon Wire Rope Light   | Short for SwitchBot RGBIC Neon Wire Rope Light               | W1702108              |                                   |
-| Candle Warmer Lamp           | Short for SwitchBot Candle Warmer Lamp                       | W8302100 and W8302101 |                                   |
 | Smart Radiator Thermostat    | Short for SwitchBot Smart Radiator Thermostat                | W7830000              |                                   |
 | Indoor Cam                   | Short for SwitchBot Indoor Cam                               | W1301200              |                                   |
 | Pan/Tilt Cam                 | Short for SwitchBot Pan/Tilt Cam                             | W1801200              |                                   |
@@ -979,7 +974,6 @@ Physical devices refer to the following SwitchBot products,
  -  `new` RGBICWW Strip Light
  -  `new` RGBICWW Floor Lamp
  -  `new` RGBIC Neon Wire Rope Light
- -  `new` Candle Warmer Lamp
  -  `new` Smart Radiator Thermostat
 
 Virtual infrared remote devices refer to virtual devices that are used to simulate infrared signals of a home appliance remote control. A SwitchBot Hub Plus, Hub Mini, Hub 2, Hub 3 or Ceiling Light is required in order to be able to create these virtual devices within the app. The types of appliances supported include,
@@ -1289,15 +1283,6 @@ The `deviceList` array contains a list of objects with the following key-value a
 | deviceId           | String     | device ID                                                    |
 | deviceName         | String     | device name                                                  |
 | deviceType         | String     | device type. *RGBIC Neon Wire Rope Light*                             |
-| enableCloudService | Boolean    | determines if Cloud Service is enabled or not for the current device |
-| hubDeviceId        | String     | device's parent Hub ID. *000000000000* when the device itself is a Hub or it is connected through Wi-Fi. |
-
-##### Candle Warmer Lamp
-| Key                | Value Type | Description                                                  |
-| ------------------ | ---------- | ------------------------------------------------------------ |
-| deviceId           | String     | device ID                                                    |
-| deviceName         | String     | device name                                                  |
-| deviceType         | String     | device type. *Candle Warmer Lamp*                             |
 | enableCloudService | Boolean    | determines if Cloud Service is enabled or not for the current device |
 | hubDeviceId        | String     | device's parent Hub ID. *000000000000* when the device itself is a Hub or it is connected through Wi-Fi. |
 
@@ -2071,7 +2056,7 @@ The `body` object contains the following properties,
 | ------------------ | ---------- | ------------------------------------------------------------ |
 | battery                | Integer    |  the current battery level                                            |
 | deviceId           | String     | device ID                                                    |
-| deviceType         | String     | device type. *Candle Warmer Lamp*                                 |
+| deviceType         | String     | device type. *Smart Radiator Thermostatp*                                 |
 | hubDeviceId        | String     | device's parent Hub ID. *000000000000* when the device itself is a Hub or it is connected through Wi-Fi. |
 | mode        | Integter   | the current mode. `0`, schedule mode; `1`,manual mode; `2`, power off mode; `3`, energy saving mode; `4`, comfort mode;`5`, quick heating mode |
 | temperature            | Float      | temperature in celsius                                  |
