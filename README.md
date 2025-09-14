@@ -46,6 +46,11 @@
       - [Water Leak Detector](#water-leak-detector)
       - [Ceiling Light](#ceiling-light)
       - [Ceiling Light Pro](#ceiling-light-pro)
+      - [RGBICWW Strip Light](#rgbicww-strip-light)
+      - [RGBICWW Floor Lamp](#rgbicww-floor-light)
+      - [RGBIC Neon Wire Rope Light](#rgbic-neon-wire-rope-light)
+      - [Candle Warmer Lamp](#candle-warmer-lamp)
+      - [Smart Radiato Thermostat](#smart-radiato-thermostat)
       - [Plug Mini (US)](#plug-mini-us)
       - [Plug Mini (JP)](#plug-mini-jp)
       - [Plug Mini (EU)](#plug-mini-eu)
@@ -108,6 +113,11 @@
       - [Water Leak Detector](#water-leak-detector-1)
       - [Ceiling Light](#ceiling-light-1)
       - [Ceiling Light Pro](#ceiling-light-pro-1)
+      - [RGBICWW Strip Light](#rgbicww-strip-light-1)
+      - [RGBICWW Floor Lamp](#rgbicww-floor-light-1)
+      - [RGBIC Neon Wire Rope Light](#rgbic-neon-wire-rope-light-1)
+      - [Candle Warmer Lamp](#candle-warmer-lamp-1)
+      - [Smart Radiato Thermostat](#smart-radiato-thermostat-1)
       - [Plug Mini (US)](#plug-mini-us-1)
       - [Plug Mini (JP)](#plug-mini-jp-1)
       - [Plug Mini (EU)](#plug-mini-eu-1)
@@ -182,6 +192,11 @@
       - [Robot Vacuum K11+](#robot-vacuum-k11+-2)
       - [Ceiling Light](#ceiling-light-2)
       - [Ceiling Light Pro](#ceiling-light-pro-2)
+      - [RGBICWW Strip Light](#rgbicww-strip-light-2)
+      - [RGBICWW Floor Lamp](#rgbicww-floor-light-2)
+      - [RGBIC Neon Wire Rope Light](#rgbic-neon-wire-rope-light-2)
+      - [Candle Warmer Lamp](#candle-warmer-lamp-2)
+      - [Smart Radiato Thermostat](#smart-radiato-thermostat--2)
       - [Keypad](#keypad-2)
       - [Keypad Touch](#keypad-touch-2)
       - [Blind Tilt](#blind-tilt-2)
@@ -277,6 +292,11 @@
     + [Robot Vacuum K11+](#robot-vacuum-k11+-3)
     + [Ceiling Light](#ceiling-light-3)
     + [Ceiling Light Pro](#ceiling-light-pro-3)
+    + [RGBICWW Strip Light](#rgbicww-strip-light-3)
+    + [RGBICWW Floor Lamp](#rgbicww-floor-light-3)
+    + [RGBIC Neon Wire Rope Light](#rgbic-neon-wire-rope-light-3)
+    + [Candle Warmer Lamp](#candle-warmer-lamp-3)
+    + [Smart Radiato Thermostat ](#smart-radiato-thermostat-3)
     + [Keypad](#keypad-3)
       - [Create a passcode](#create-a-passcode)
       - [Delete a passcode](#delete-a-passcode)
@@ -307,6 +327,35 @@
 
 ## Introduction
 This document describes a collection of SwitchBot API methods, examples, and best practices for, but not limited to, IoT hobbyists, developers, and gurus to make their own smart home programs or applications. 
+
+To Global customers:
+Our company hopes to provide a more flexible and personalized user experience through the API interface.
+To ensure fair use and service quality for all users, we would like to explain the scope of API usage.
+1. Individual Users
+We welcome and encourage the use of our API for personal projects, academic research, and creative activities in daily life.
+For these purposes, you may freely call the API without any additional application.
+2. Commercial Use
+If you plan to integrate the SwitchBot API into commercial products or services, or if you intend to make large-scale calls (e.g., thousands of requests or more), please contact us first. We have a dedicated Enterprise API available.
+Your product/service will run more stably.
+We can provide professional technical support and guaranteed allocation.
+We can ensure that your usage complies with our service terms and brand guidelines.
+Contact Information
+For any requests or questions regarding commercial use, please feel free to contact us:
+https://share.hsforms.com/1aDMLLwl_QmSazZr8i3Gakgbx01q
+
+日本でご利用の皆さまへ:
+弊社はAPIインターフェイスを通じて、より柔軟でパーソナルな利用体験を提供できることを願っております。
+すべてのユーザーの皆様の公平な利用とサービス品質を保証するため、APIの利用範囲についてご説明いたします。
+①個人ユーザーの利用 
+弊社は、個人のプロジェクト、学習研究、および日常生活におけるクリエイティブなシーンでのAPI利用を歓迎し、奨励いたします。 
+これらの目的で利用する場合は追加の申請なしにAPIを自由に呼び出すことができます。
+➁商用利用 
+SwitchBot APIを商業製品やサービスに統合する予定がある場合、または大規模な呼び出し（例：数千回以上のリクエスト）を行う場合は、まず弊社にご連絡ください、別途EnterpriseAPIをご用意しております。
+• 貴社の製品/サービスの動作がより安定します。
+• 専門的な技術サポートと割り当ての保証を提供できます。
+• 貴社の利用が弊社のサービス利用規約およびブランドガイドラインに準拠していることを確認できます。
+お問い合わせ方法 
+商用利用に関するご要望やご質問がございましたら、いつでもお気軽にお問い合わせください。 📧 メール：biz@switchbot.jp
 
 ## About the New Version
 
@@ -761,6 +810,11 @@ The following table provides definitions to the terms to be frequently mentioned
 | K11+ | Short for Robot Vacuum K11+| W3003100 and W3003100 | |
 | Ceiling Light                | Short for SwitchBot Ceiling Light                            | W2612230 and W2612240 | Currently only available in Japan |
 | Ceiling Light Pro            | Short for SwitchBot Ceiling Light Pro                        | W2612210 and W2612220 | Currently only available in Japan |
+| RGBICWW Strip Light          | Short for SwitchBot RGBICWW Strip Light                      | W1702109              |                                   |
+| RGBICWW Floor Lamp           | Short for SwitchBot RGBICWW Floor Lamp                       | W1702101              |                                   |
+| RGBIC Neon Wire Rope Light   | Short for SwitchBot RGBIC Neon Wire Rope Light               | W1702108              |                                   |
+| Candle Warmer Lamp           | Short for SwitchBot Candle Warmer Lamp                       | W8302100 and W8302101 |                                   |
+| Smart Radiator Thermostat    | Short for SwitchBot Smart Radiator Thermostat                | W7830000              |                                   |
 | Indoor Cam                   | Short for SwitchBot Indoor Cam                               | W1301200              |                                   |
 | Pan/Tilt Cam                 | Short for SwitchBot Pan/Tilt Cam                             | W1801200              |                                   |
 | Pan/Tilt Cam 2K              | Short for SwitchBot Pan/Tilt Cam 2K                          | W3101100              |                                   |
@@ -922,8 +976,13 @@ Physical devices refer to the following SwitchBot products,
  -  K20+ Pro
  -  `new` K11+
  -  `new` Plug Mini (EU)
+ -  `new` RGBICWW Strip Light
+ -  `new` RGBICWW Floor Lamp
+ -  `new` RGBIC Neon Wire Rope Light
+ -  `new` Candle Warmer Lamp
+ -  `new` Smart Radiator Thermostat
 
-Virtual infrared remote devices refer to virtual devices that are used to simulate infrared signals of a home appliance remote control. A SwitchBot Hub Plus, Hub Mini, Hub 2, or Ceiling Light is required in order to be able to create these virtual devices within the app. The types of appliances supported include,
+Virtual infrared remote devices refer to virtual devices that are used to simulate infrared signals of a home appliance remote control. A SwitchBot Hub Plus, Hub Mini, Hub 2, Hub 3 or Ceiling Light is required in order to be able to create these virtual devices within the app. The types of appliances supported include,
  -  Air Conditioner
  -  TV
  -  Light
@@ -1205,6 +1264,49 @@ The `deviceList` array contains a list of objects with the following key-value a
 | deviceType         | String     | device type. *Ceiling Light Pro*                             |
 | enableCloudService | Boolean    | determines if Cloud Service is enabled or not for the current device |
 | hubDeviceId        | String     | device's parent Hub ID. *000000000000* when the device itself is a Hub or it is connected through Wi-Fi. |
+
+##### RGBICWW Strip Light
+| Key                | Value Type | Description                                                  |
+| ------------------ | ---------- | ------------------------------------------------------------ |
+| deviceId           | String     | device ID                                                    |
+| deviceName         | String     | device name                                                  |
+| deviceType         | String     | device type. *RGBICWW Strip Light*                             |
+| enableCloudService | Boolean    | determines if Cloud Service is enabled or not for the current device |
+| hubDeviceId        | String     | device's parent Hub ID. *000000000000* when the device itself is a Hub or it is connected through Wi-Fi. |
+
+##### RGBICWW Floor Lamp
+| Key                | Value Type | Description                                                  |
+| ------------------ | ---------- | ------------------------------------------------------------ |
+| deviceId           | String     | device ID                                                    |
+| deviceName         | String     | device name                                                  |
+| deviceType         | String     | device type. *RGBICWW Floor Lamp*                             |
+| enableCloudService | Boolean    | determines if Cloud Service is enabled or not for the current device |
+| hubDeviceId        | String     | device's parent Hub ID. *000000000000* when the device itself is a Hub or it is connected through Wi-Fi. |
+
+##### RGBIC Neon Wire Rope Light
+| Key                | Value Type | Description                                                  |
+| ------------------ | ---------- | ------------------------------------------------------------ |
+| deviceId           | String     | device ID                                                    |
+| deviceName         | String     | device name                                                  |
+| deviceType         | String     | device type. *RGBIC Neon Wire Rope Light*                             |
+| enableCloudService | Boolean    | determines if Cloud Service is enabled or not for the current device |
+| hubDeviceId        | String     | device's parent Hub ID. *000000000000* when the device itself is a Hub or it is connected through Wi-Fi. |
+
+##### Candle Warmer Lamp
+| Key                | Value Type | Description                                                  |
+| ------------------ | ---------- | ------------------------------------------------------------ |
+| deviceId           | String     | device ID                                                    |
+| deviceName         | String     | device name                                                  |
+| deviceType         | String     | device type. *Candle Warmer Lamp*                             |
+| enableCloudService | Boolean    | determines if Cloud Service is enabled or not for the current device |
+| hubDeviceId        | String     | device's parent Hub ID. *000000000000* when the device itself is a Hub or it is connected through Wi-Fi. |
+
+##### Smart Radiator Thermostat
+| Key                | Value Type | Description                                                  |
+| ------------------ | ---------- | ------------------------------------------------------------ |
+| deviceId           | String     | device ID                                                    |
+| deviceName         | String     | device name                                                  |
+| deviceType         | String     | device type. *Smart Radiator Thermostat*                     |
 
 ##### Plug Mini (US)
 | Key                | Value Type | Description                                                  |
@@ -1920,6 +2022,60 @@ The `body` object contains the following properties,
 | power | String | ON/OFF state |
 | brightness | Integer | the brightness value, range from 1 to 100 |
 | colorTemperature | Integer | the color temperature value, range from 2700 to 6500 |
+
+##### RGBICWW Strip Light
+
+| Key                | Value Type | Description                                                  |
+| ------------------ | ---------- | ------------------------------------------------------------ |
+| deviceId           | String     | device ID                                                    |
+| deviceType         | String     | device type. *RGBICWW Strip Light*                             |
+| hubDeviceId        | String     | device's parent Hub ID. *000000000000* when the device itself is a Hub or it is connected through Wi-Fi. |
+| version              | String     | the current BLE and Wi-Fi firmware version, e.g. V3.1-6.3 |
+| power | String | ON/OFF state |
+| onlineStatus    | String     | the connection status of the device. *online* or *offline* |
+| brightness | Integer | the brightness value, range from 1 to 100 |
+| color                  | String     |  the color value, RGB "255:255:255"                           |
+| colorTemperature | Integer | the color temperature value, range from 2700 to 6500 |
+
+##### RGBICWW Floor Lamp
+
+| Key                | Value Type | Description                                                  |
+| ------------------ | ---------- | ------------------------------------------------------------ |
+| deviceId           | String     | device ID                                                    |
+| deviceType         | String     | device type. *RGBICWW Floor Lamp*                             |
+| hubDeviceId        | String     | device's parent Hub ID. *000000000000* when the device itself is a Hub or it is connected through Wi-Fi. |
+| version              | String     | the current BLE and Wi-Fi firmware version, e.g. V3.1-6.3 |
+| power | String | ON/OFF state |
+| onlineStatus    | String     | the connection status of the device. *online* or *offline* |
+| brightness | Integer | the brightness value, range from 1 to 100 |
+| color                  | String     |  the color value, RGB "255:255:255"                           |
+| colorTemperature | Integer | the color temperature value, range from 2700 to 6500 |
+
+##### RGBIC Neon Wire Rope Light
+
+| Key                | Value Type | Description                                                  |
+| ------------------ | ---------- | ------------------------------------------------------------ |
+| deviceId           | String     | device ID                                                    |
+| deviceType         | String     | device type. *RGBIC Neon Wire Rope Light*                             |
+| hubDeviceId        | String     | device's parent Hub ID. *000000000000* when the device itself is a Hub or it is connected through Wi-Fi. |
+| version              | String     | the current BLE and Wi-Fi firmware version, e.g. V3.1-6.3 |
+| power | String | ON/OFF state |
+| onlineStatus    | String     | the connection status of the device. *online* or *offline* |
+| brightness | Integer | the brightness value, range from 1 to 100 |
+| color                  | String     |  the color value, RGB "255:255:255"                           |
+| colorTemperature | Integer | the color temperature value, range from 2700 to 6500 |
+
+##### Smart Radiator Thermostat
+
+| Key                | Value Type | Description                                                  |
+| ------------------ | ---------- | ------------------------------------------------------------ |
+| battery                | Integer    |  the current battery level                                            |
+| deviceId           | String     | device ID                                                    |
+| deviceType         | String     | device type. *Candle Warmer Lamp*                                 |
+| hubDeviceId        | String     | device's parent Hub ID. *000000000000* when the device itself is a Hub or it is connected through Wi-Fi. |
+| mode        | Integter   | the current mode. `0`, schedule mode; `1`,manual mode; `2`, power off mode; `3`, energy saving mode; `4`, comfort mode;`5`, quick heating mode |
+| temperature            | Float      | temperature in celsius                                  |
+| version              | String     | the current BLE and Wi-Fi firmware version, e.g. V3.1-6.3 |
 
 ##### Plug Mini (US) 
 
@@ -2639,7 +2795,7 @@ Send control commands to physical devices and virtual infrared remote devices.
 | Floor Lamp | command     | toggle              | default                                                      | toggle state                                                 |
 | Floor Lamp               | command     | setBrightness       | `{0-100}`                                                    | set brightness                                               |
 | Floor Lamp | command     | setColor            | `"{0-255}:{0-255}:{0-255}"`                                  | set RGB color value  
-| Floor Lamp | command     | setColorTemperature | `{2700-6500}`                                                | set color temperature   
+| Floor Lamp | command     | setColorTemperature | `{2700-6500}`                                                | set color temperature
 
 ##### Strip Light 3
 | deviceType                   | commandType | Command             | command parameter                                            | Description                                                  |
@@ -2820,6 +2976,44 @@ The following table describes the parameter object for `deleteKey`,
 | Ceiling Light Pro | command     | toggle              | default                                                      | toggle state                                                 |
 | Ceiling Light Pro | command     | setBrightness       | `{1-100}`                                                    | set brightness                                               |
 | Ceiling Light Pro | command     | setColorTemperature | `{2700-6500}`                                  | set the color temperature |
+
+##### RGBICWW Strip Light
+| deviceType                   | commandType | Command             | command parameter                                            | Description                                                  |
+| ---------------------------- | ----------- | ------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| RGBICWW Strip Light | command     | turnOn              | default                                                      | set to ON state                                              |
+| RGBICWW Strip Light | command     | turnOff             | default                                                      | set to OFF state                                             |
+| RGBICWW Strip Light | command     | toggle              | default                                                      | toggle state                                                 |
+| RGBICWW Strip Light | command     | setBrightness       | `{1-100}`                                                    | set brightness                                               |
+| RGBICWW Strip Light | command     | setColorTemperature | `{2700-6500}`                                                | set color temperature                                         |
+| RGBICWW Strip Light | command     | setColor            | `"{0-255}:{0-255}:{0-255}"`                                  | set RGB color value  
+
+##### RGBICWW Floor Lamp
+| deviceType                   | commandType | Command             | command parameter                                            | Description                                                  |
+| ---------------------------- | ----------- | ------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| RGBICWW Floor Lamp | command     | turnOn              | default                                                      | set to ON state                                              |
+| RGBICWW Floor Lamp | command     | turnOff             | default                                                      | set to OFF state                                             |
+| RGBICWW Floor Lamp | command     | toggle              | default                                                      | toggle state                                                 |
+| RGBICWW Floor Lamp | command     | setBrightness       | `{1-100}`                                                    | set brightness                                               |
+| RGBICWW Floor Lamp | command     | setColorTemperature | `{2700-6500}`                                                | set color temperature                                         |
+| RGBICWW Floor Lamp | command     | setColor            | `"{0-255}:{0-255}:{0-255}"`                                  | set RGB color value  
+
+##### RGBIC Neon Wire Rope Light
+| deviceType                   | commandType | Command             | command parameter                                            | Description                                                  |
+| ---------------------------- | ----------- | ------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| RGBIC Neon Wire Rope Light | command     | turnOn              | default                                                      | set to ON state                                              |
+| RGBIC Neon Wire Rope Light | command     | turnOff             | default                                                      | set to OFF state                                             |
+| RGBIC Neon Wire Rope Light | command     | toggle              | default                                                      | toggle state                                                 |
+| RGBIC Neon Wire Rope Light | command     | setBrightness       | `{1-100}`                                                    | set brightness                                               |
+| RGBIC Neon Wire Rope Light | command     | setColorTemperature | `{2700-6500}`                                                | set color temperature                                         |
+| RGBIC Neon Wire Rope Light | command     | setColor            | `"{0-255}:{0-255}:{0-255}"`                                  | set RGB color value
+
+##### Smart Radiator Thermostat
+| deviceType                   | commandType | Command             | command parameter                                            | Description                                                  |
+| ---------------------------- | ----------- | ------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Smart Radiator Thermostat | command     | turnOn              | default                                                      | set to ON state                                              |
+| Smart Radiator Thermostat | command     | turnOff             | default                                                      | set to OFF state                                             |
+| Smart Radiator Thermostat | command | setMode | `0~5` | set the switch mode. `0`,`0`, schedule mode; `1`,manual mode; `2`, power off mode; `3`, energy saving mode; `4`, comfort mode;`5`, quick heating mode |
+| Smart Radiator Thermostat | command | setManualModeTemperature | `4~35` | set the radiator thermostat temperature. Temperature range: 4–35 °C (inclusive) |
 
 ##### Keypad
 
@@ -4446,6 +4640,122 @@ When an event gets triggered, SwitchBot server will send a `POST` request to the
         "powerState": "ON",
         "brightness": 10,
         "colorTemperature": 3500,
+        "timeOfSample": 123456789
+    }
+}
+```
+
+#### RGBICWW Strip Light
+| Key Name     | Value Type | Description                                          |
+| ------------ | ---------- | ---------------------------------------------------- |
+| eventType    | String     | the type of events                                   |
+| eventVersion | String     | the current event version                            |
+| context      | Object     | the detail info of the event                         |
+| deviceType   | String     | attributes of the context object. the type of the device |
+| deviceMac    | String     | attributes of the context object. the MAC address of the device |
+| powerState | String | attributes of the context object. ON/OFF state |
+| brightness | Integer | attributes of the context object. the brightness value, range from 1 to 100 |
+| color        | String     | the color value, in the format of RGB value, "255:255:255" |
+| colorTemperature | Integer | attributes of the context object. the color temperature value, range from 2700 to 6500 |
+| timeOfSample    | Long | attributes of the context object. the time stamp when the event is sent |
+
+```js
+{
+   "eventType": "changeReport",
+    "eventVersion": "1",
+    "context": {
+        "deviceType": "RGBICWW Strip Light",
+        "deviceMac": DEVICE_MAC_ADDR,
+        "powerState": "ON",//"ON"or"OFF"
+        "brightness": 10,
+        "color": "255:255:0",
+        "colorTemperature": 3500,
+        "timeOfSample": 123456789
+    }
+}
+```
+
+#### RGBICWW Floor Lamp
+| Key Name     | Value Type | Description                                          |
+| ------------ | ---------- | ---------------------------------------------------- |
+| eventType    | String     | the type of events                                   |
+| eventVersion | String     | the current event version                            |
+| context      | Object     | the detail info of the event                         |
+| deviceType   | String     | attributes of the context object. the type of the device |
+| deviceMac    | String     | attributes of the context object. the MAC address of the device |
+| powerState | String | attributes of the context object. ON/OFF state |
+| brightness | Integer | attributes of the context object. the brightness value, range from 1 to 100 |
+| color        | String     | the color value, in the format of RGB value, "255:255:255" |
+| colorTemperature | Integer | attributes of the context object. the color temperature value, range from 2700 to 6500 |
+| timeOfSample    | Long | attributes of the context object. the time stamp when the event is sent |
+
+```js
+{
+    "eventType": "changeReport",
+    "eventVersion": "1",
+    "context": {
+        "deviceType": "RGBICWW Floor Lamp",
+        "deviceMac": DEVICE_MAC_ADDR,
+        "powerState": "ON",//"ON"or"OFF"
+        "brightness": 10,
+        "color": "255:255:0",
+        "colorTemperature": 3500,
+        "timeOfSample": 123456789
+    }
+}
+```
+
+#### RGBIC Neon Wire Rope Light
+| Key Name     | Value Type | Description                                          |
+| ------------ | ---------- | ---------------------------------------------------- |
+| eventType    | String     | the type of events                                   |
+| eventVersion | String     | the current event version                            |
+| context      | Object     | the detail info of the event                         |
+| deviceType   | String     | attributes of the context object. the type of the device |
+| deviceMac    | String     | attributes of the context object. the MAC address of the device |
+| powerState | String | attributes of the context object. ON/OFF state |
+| brightness | Integer | attributes of the context object. the brightness value, range from 1 to 100 |
+| color        | String     | the color value, in the format of RGB value, "255:255:255" |
+| colorTemperature | Integer | attributes of the context object. the color temperature value, range from 2700 to 6500 |
+| timeOfSample    | Long | attributes of the context object. the time stamp when the event is sent |
+
+```js
+{
+   "eventType": "changeReport",
+    "eventVersion": "1",
+    "context": {
+        "deviceType": "RGBICWW Strip Light",
+        "deviceMac": DEVICE_MAC_ADDR,
+        "powerState": "ON",//"ON"or"OFF"
+        "brightness": 10,
+        "color": "255:255:0",
+        "colorTemperature": 3500,
+        "timeOfSample": 123456789
+    }
+}
+```
+
+#### Smart Radiator Thermostat 
+| Key Name     | Value Type | Description                                          |
+| ------------ | ---------- | ---------------------------------------------------- |
+| eventType    | String     | the type of events                                   |
+| eventVersion | String     | the current event version                            |
+| context      | Object     | the detail info of the event                         |
+| deviceType   | String     | attributes of the context object. the type of the device |
+| deviceMac    | String     | attributes of the context object. the MAC address of the device |
+| mode         | String  |  | set the current device mode |
+| battery      | Integer          | the battery level                           |
+| timeOfSample    | Long | attributes of the context object. the time stamp when the event is sent |
+
+```js
+{
+    "eventType": "changeReport",
+    "eventVersion": "1",
+    "context": {
+        "deviceType": "Smart Radiator Thermostat",
+        "deviceMac": "94A990502B72",
+        "mode": 1, 
+        "battery": 100, 
         "timeOfSample": 123456789
     }
 }
