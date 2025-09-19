@@ -328,6 +328,7 @@ This document describes a collection of SwitchBot API methods, examples, and bes
 It is prohibited for commercial uses or for large-scale applications. There is a daily call limit to all users to ensure resources are evenly distributed to each API user. 
 For commercial uses, please do consult SwitchBot via this [form](https://share.hsforms.com/1aDMLLwl_QmSazZr8i3Gakgbx01q).
 
+
 > 日本でご利用の皆さまへ:
 弊社はAPIインターフェイスを通じて、より柔軟でパーソナルな利用体験を提供できることを願っております。
 すべてのユーザーの皆様の公平な利用とサービス品質を保証するため、APIの利用範囲についてご説明いたします。
