@@ -324,20 +324,9 @@
 ## Introduction
 This document describes a collection of SwitchBot API methods, examples, and best practices for, but not limited to, IoT hobbyists, developers, and gurus to make their own smart home programs or applications. 
 
-To Global customers:
-Our company hopes to provide a more flexible and personalized user experience through the API interface.
-To ensure fair use and service quality for all users, we would like to explain the scope of API usage.
-1. Individual Users
-We welcome and encourage the use of our API for personal projects, academic research, and creative activities in daily life.
-For these purposes, you may freely call the API without any additional application.
-2. Commercial Use
-If you plan to integrate the SwitchBot API into commercial products or services, or if you intend to make large-scale calls (e.g., thousands of requests or more), please contact us first. We have a dedicated Enterprise API available.
-Your product/service will run more stably.
-We can provide professional technical support and guaranteed allocation.
-We can ensure that your usage complies with our service terms and brand guidelines.
-Contact Information
-For any requests or questions regarding commercial use, please feel free to contact us:
-https://share.hsforms.com/1aDMLLwl_QmSazZr8i3Gakgbx01q
+Note: This API is limited to personal uses.
+It is prohibited for commercial uses or a large-scale applications. There is a daily call limit to all users to ensure resources are evenly distributed to each API user. 
+For commercial uses, please do consult SwitchBot via this [form](https://share.hsforms.com/1aDMLLwl_QmSazZr8i3Gakgbx01q).
 
 日本でご利用の皆さまへ:
 弊社はAPIインターフェイスを通じて、より柔軟でパーソナルな利用体験を提供できることを願っております。
